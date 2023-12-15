@@ -8,7 +8,7 @@ void execute_commands(FILE *file)
 {
 	stack_t *stack = NULL;
 	char *opcode, buffer[1024];
-	int line_number;
+	int line_number = 1;
 	instruction_t instructions[] = {
 		{"push", push},
 		{"pall", pall},
